@@ -7,54 +7,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
   .carousel-inner img {
     height: 80vh;
     width: 100%;
   }
-  .carousel-inner img{
-    
-    height:auto !important;
+
+  .carousel-inner img {
+
+    height: 35rem;
   }
 
   .navbar img {
-    width: 6rem;
-  
+    width: 7rem;
+
   }
   iframe{
-    width:100%;
+    width: 100%;
     height: 100%;
   }
 
-  /* .About img {
-    width: 41vw;
-  } */
 
-  /* .Text {
-    font-size: 1.5rem;
-    color: #B7A8A0;
-  } */
 
   .From {
     padding-top: 2rem;
     margin-bottom: 2rem;
   }
- @media (max-width:768px){
-   /* .About img{
-    width: 96vw;
-   }
-   .From {
-    padding-top: 1rem;
-  }*/
- } 
- 
 </style>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0">
-    <div class="container ">
+  <nav class="navbar  navbar-expand-lg navbar-light  pt-0 pb-0">
+    <div class="container">
       <img src="foodies.png" alt="">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,21 +50,65 @@
       <div class="collapse navbar-collapse text-center" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link  fs-5 " href="#">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link  fs-5" href="#Service">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
+            <a class="nav-link fs-5 " href="#">Help</a>
           </li>
-          <li><input class="btn btn-primary ml-2" type="submit" value="SingUp"></li>
+
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary " data-bs-toggle="modal" data-bs-target="#exampleModal">
+            signup
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Foodies</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="row mb-3">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                      <div class="col-sm-10">
+                        <input type="email" class="form-control" id="inputEmail3">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                      <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword3">
+                      </div>
+                    </div>
+
+
+
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </ul>
+
       </div>
     </div>
+
+
+
   </nav>
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -97,7 +128,7 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
-          <img  src="fimg.jpg" class="d-block w-100 img-responsive" alt="...">
+          <img src="fimg.jpg" class="d-block w-100 img-responsive" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
@@ -129,8 +160,8 @@
     </div>
   </div>
   <div class="container">
-    <div class="row">
-      <div class="col-md-8 mx-auto text-center pt-5">
+    <div class="row ">
+      <div class="col-md-8 mx-auto text-center pt-5 " id="Service">
         <h4 class="text-info">
           OUR SERVICES
         </h4>
@@ -141,7 +172,7 @@
       </div>
     </div>
   </div>
-  <!-- OUR SERVICES  -->
+  <!-- OUR SERVICES end -->
   <div class="container  pb-3">
     <div class="row row-cols-1 row-cols-md-3 g-3">
       <div class="col">
@@ -213,7 +244,7 @@
     </div>
   </div>
   <!-- About  -->
- <div class="container pt-md-5 pb-md-5 ">
+  <div class="container pt-md-3 pb-md-5 ">
     <div class="row">
       <div class="col-md-8 mx-auto text-center ">
         <h1 class="text-info">
@@ -226,14 +257,15 @@
       </div>
     </div>
   </div>
-</div>
+  </div>
   <div class="container mb-sm-2 About ">
     <div class="row">
       <div class=" card h-100 col-md-12 col-sm-12  col-lg-6">
         <img class="img-responsive w-100" src="About.jpg" alt="">
       </div>
       <div class="col-md-12 col-sm-12 col-lg-6  mb-2 Text">
-        <p class=" card-text fs-5 text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rem veniam at, voluptate atque, minima,
+        <p class=" card-text fs-5 text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rem veniam
+          at, voluptate atque, minima,
           asperiores provident sunt debitis fugit facilis. Nobis doloribus consectetur nam! Dolores aliquid culpa
           excepturi suscipit? Lorem ipsum dolor sit amet consectetur, adipisicing elit. In beatae, corrupti
           consectetur architecto maiores possimus sequi nesciunt provident inventore! Quidem molestiae sapiente
@@ -243,185 +275,193 @@
     </div>
   </div>
   <!-- form  -->
- 
-    <div class="container pt-sm-5  mb-sm-4">
-      <div class="row">
-        <div class=" col-sm-12 col-md-6 col-lg-6">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1871264.5744085577!2d84.514345584271!3d23.646844813932496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398b2386df480857%3A0x62c5b809eee29004!2sJharkhand!5e0!3m2!1sen!2sin!4v1634371026438!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <div class=" col-sm-12 col-md-6 col-lg-6 From">
-          <form>
-            <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-              <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3">
-              </div>
-            </div>
-            <div class="row mb-3">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-              <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword3">
-              </div>
-            </div>
 
-            <div class="row mb-3">
-              <div class="col-sm-10 offset-sm-2">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="gridCheck1">
-                  <label class="form-check-label" for="gridCheck1">
-                    Remender
-                  </label>
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary">Sign in</button>
-          </form>
-        </div>
-
+  <div class="container pt-sm-5  mb-sm-4">
+    <div class="row">
+      <div class=" col-sm-12 col-md-6 col-lg-6">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1871264.5744085577!2d84.514345584271!3d23.646844813932496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398b2386df480857%3A0x62c5b809eee29004!2sJharkhand!5e0!3m2!1sen!2sin!4v1634371026438!5m2!1sen!2sin"
+          style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-    </div>
-    <!-- Footer -->
-<footer class="page-footer font-small ">
+      <div class=" col-sm-12 col-md-6 col-lg-6 From">
+        <form>
+          <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3">
+            </div>
+          </div>
+          <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
 
-  <div style="background-color: #6351ce;">
-    <div class="container">
-
-      <!-- Grid row-->
-      <div class="row py-4 d-flex align-items-center text-light">
-
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-          <h6 class="mb-0">Get connected with us on social networks!</h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-6 col-lg-7 text-center text-md-right text-light ">
-
-          <!-- Facebook -->
-          <a class="fb-ic text-light">
-            <i class="fab fa-facebook-f white-text mr-5"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic text-light">
-            <i class="fab fa-twitter white-text mr-4"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic text-light">
-            <i class="fab fa-google-plus-g white-text mr-4"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic text-light">
-            <i class="fab fa-linkedin-in white-text mr-4"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ictext-light text-light">
-            <i class="fab fa-instagram white-text"> </i>
-          </a>
-
-        </div>
-        <!-- Grid column -->
-
+          <div class="row mb-3">
+            <div class="col-sm-10 offset-sm-2">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck1">
+                <label class="form-check-label" for="gridCheck1">
+                  Remender
+                </label>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
       </div>
-      <!-- Grid row-->
 
     </div>
   </div>
+  <!-- Footer -->
+  <footer class="page-footer font-small ">
 
-  <!-- Footer Links -->
-  <div class="container text-center text-md-left mt-5">
+    <div style="background-color: #6351ce;">
+      <div class="container">
 
-    <!-- Grid row -->
-    <div class="row mt-3">
+        <!-- Grid row-->
+        <div class="row py-4 d-flex align-items-center text-light">
 
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+            <h6 class="mb-0">Get connected with us on social networks!</h6>
+          </div>
+          <!-- Grid column -->
 
-        <!-- Content -->
-        <h6 class="text-uppercase font-weight-bold">Company name</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor obcaecati omnis assumenda quia, ipsa quasi maxime, quam quis fugiat corporis facilis minima. Possimus voluptatum ex aperiam sunt quasi, atque minus?</p>
+          <!-- Grid column -->
+          <div class="col-md-6 col-lg-7 text-center text-md-right text-light  ">
 
-      </div>
-      <!-- Grid column -->
+            <!-- Facebook -->
+            <a class="fb-ic text-light">
+              <i class="fab fa-facebook-f white-text "> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic text-light">
+              <i class="fab fa-twitter white-text "> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic text-light">
+              <i class="fab fa-google-plus-g white-text "> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic text-light">
+              <i class="fab fa-linkedin-in white-text"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ictext-light text-light">
+              <i class="fab fa-instagram white-text"> </i>
+            </a>
 
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          </div>
+          <!-- Grid column -->
 
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Products</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">Chomine</a>
-        </p>
-        <p>
-          <a href="#!">Pizza</a>
-        </p>
-        <p>
-          <a href="#!">Tea</a>
-        </p>
-        <p>
-          <a href="#!">Green tea</a>
-        </p>
-
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <a href="#!">Your Account</a>
-        </p>
-        <p>
-          <a href="#!">Become an Affiliate</a>
-        </p>
-        <p>
-          <a href="#!">Shipping Rates</a>
-        </p>
-        <p>
-          <a href="#!">Help</a>
-        </p>
+        </div>
+        <!-- Grid row-->
 
       </div>
-      <!-- Grid column -->
+    </div>
 
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
 
-        <!-- Links -->
-        <h6 class="text-uppercase font-weight-bold">Contact</h6>
-        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-        <p>
-          <i class="fas fa-home mr-3"></i> India, Jharkhad,Bokaro</p>
-        <p>
-          <i class="fas fa-envelope mr-3"></i> info@foodies.com</p>
-        <p>
-          <i class="fas fa-phone mr-3"></i> +91 123456789</p>
-        <p>
-          <i class="fas fa-print mr-3"></i> +91 987654321</p>
+      <!-- Grid row -->
+      <div class="row mt-3">
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+          <!-- Content -->
+          <h6 class="text-uppercase font-weight-bold">Company name</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor obcaecati omnis assumenda quia, ipsa quasi
+            maxime, quam quis fugiat corporis facilis minima. Possimus voluptatum ex aperiam sunt quasi, atque minus?
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Products</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Chomine</a>
+          </p>
+          <p>
+            <a href="#!">Pizza</a>
+          </p>
+          <p>
+            <a href="#!">Tea</a>
+          </p>
+          <p>
+            <a href="#!">Green tea</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <a href="#!">Your Account</a>
+          </p>
+          <p>
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+          <!-- Links -->
+          <h6 class="text-uppercase font-weight-bold">Contact</h6>
+          <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+          <p>
+            <i class="fas fa-home mr-3"></i> India, Jharkhad,Bokaro
+          </p>
+          <p>
+            <i class="fas fa-envelope mr-3"></i> info@foodies.com
+          </p>
+          <p>
+            <i class="fas fa-phone mr-3"></i> +91 123456789
+          </p>
+          <p>
+            <i class="fas fa-print mr-3"></i> +91 987654321
+          </p>
+
+        </div>
+        <!-- Grid column -->
 
       </div>
-      <!-- Grid column -->
+      <!-- Grid row -->
 
     </div>
-    <!-- Grid row -->
+    <!-- Footer Links -->
 
-  </div>
-  <!-- Footer Links -->
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="#"> foodies.com</a>
+    </div>
+    <!-- Copyright -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="#"> foodies.com</a>
-  </div>
-  <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
-</footer>
-<!-- Footer -->
-  
 
 
 

@@ -41,7 +41,7 @@
 
 <body>
   <nav class="navbar  navbar-expand-lg navbar-light  pt-0 pb-0">
-    <div class="container">
+    <div class="container ">
       <img src="foodies.png" alt="">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,12 +73,20 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Foodies</h5>
+                  <h5 class="modal-title " id="exampleModalLabel">Foodies...</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                   <form>
                     <div class="row mb-3">
+                      
+                      <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputName">
+                      </div>
+                    </div>
+                    <div class="row mb-3">
+                      
                       <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                       <div class="col-sm-10">
                         <input type="email" class="form-control" id="inputEmail3">
@@ -159,13 +167,14 @@
       </button>
     </div>
   </div>
-  <div class="container">
-    <div class="row ">
+  <!-- our Service  -->
+  <div class="container pt-md-3 pb-md-5  ">
+    <div class="row text-center">
       <div class="col-md-8 mx-auto text-center pt-5 " id="Service">
-        <h4 class="text-info">
+        <h2 class="text-info">
           OUR SERVICES
-        </h4>
-        <p>
+        </h2>
+        <p class="col-md-12 text-center fs-5">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugit quas similique qui magni voluptas
           laborum fuga possimus sapiente est, labore aperiam rem, quae voluptate.
         </p>
@@ -247,9 +256,9 @@
   <div class="container pt-md-3 pb-md-5 ">
     <div class="row">
       <div class="col-md-8 mx-auto text-center ">
-        <h1 class="text-info">
+        <h2 class="text-info">
           About
-        </h1>
+        </h2>
         <p class="col-md-12 text-center fs-5">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore fugit quas similique qui magni voluptas
           laborum fuga possimus sapiente est, labore aperiam rem, quae voluptate.
@@ -260,10 +269,10 @@
   </div>
   <div class="container mb-sm-2 About ">
     <div class="row">
-      <div class=" card h-100 col-md-12 col-sm-12  col-lg-6">
+      <div class=" card h-100  col-md-12 col-sm-12  col-lg-6">
         <img class="img-responsive w-100" src="About.jpg" alt="">
       </div>
-      <div class="col-md-12 col-sm-12 col-lg-6  mb-2 Text">
+      <div class="col-md-12 col-sm-12 col-lg-6  mb-3">
         <p class=" card-text fs-5 text-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo rem veniam
           at, voluptate atque, minima,
           asperiores provident sunt debitis fugit facilis. Nobis doloribus consectetur nam! Dolores aliquid culpa
